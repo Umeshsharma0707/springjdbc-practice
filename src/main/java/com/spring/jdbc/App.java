@@ -16,12 +16,12 @@ public class App
     		   ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
        
        StudentDao studentDao = context.getBean("dao", StudentDao.class);
-//       
-//       List<Student> allStudents = studentDao.getAllStudents();
-//       
-//       for(Student student : allStudents) {
-//    	   System.out.println(student);
-//       }
+       
+       List<Student> allStudents = studentDao.getAllStudents();
+       
+       for(Student student : allStudents) {
+    	   System.out.println(student);
+       }
        
     }
 }
