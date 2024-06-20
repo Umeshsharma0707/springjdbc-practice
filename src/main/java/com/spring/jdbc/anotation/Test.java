@@ -18,9 +18,16 @@ public class Test {
 		
 		EmployeeDao employeeDao = context.getBean("employeeDao",EmployeeDao.class);
 		
-		insertEmployeeApp();
 		
+		/* Employee employee = new Employee();
+		employee.setId(13);
+		employee.setName("rahul");
+		employee.setSalary(87500);
+		employee.setRole("mern dev");
+		int updateEmployee = employeeDao.updateEmployee(employee);
+		System.out.println("total row updated : " + updateEmployee);
 		
+		*/
 	}
 	public static void insertEmployeeApp() {
 		ApplicationContext context = 
