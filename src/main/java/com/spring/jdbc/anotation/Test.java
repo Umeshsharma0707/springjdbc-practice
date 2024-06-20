@@ -1,5 +1,7 @@
 package com.spring.jdbc.anotation;
 
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 import org.springframework.context.ApplicationContext;
@@ -16,12 +18,20 @@ public class Test {
 		ApplicationContext context = 
 				new AnnotationConfigApplicationContext(com.spring.jdbc.anotation.JavaConfig.class);
 		
-		EmployeeDao employeeDao = context.getBean("employeeDao",EmployeeDao.class);
+		/*
+		 * EmployeeDao employeeDao = context.getBean("employeeDao",EmployeeDao.class);
+		 * 
+		 * 
+		 * List<Employee> allEmployees = employeeDao.getAllEmployees();
+		 * 
+		 * for(Employee employee : allEmployees) { System.out.println(employee); }
+		 */
 		
 		
+		/*
 		Employee employee = employeeDao.getEmployee(5);
 		System.out.println(employee);
-		
+		*/
 		
 		
 		
