@@ -41,7 +41,7 @@ public class EmployeeDao implements EmployeeInterface{
 
 	@Override
 	public int deleteEmployee(int id) {
-		String sql = "delete employees where id = ?";
+		String sql = "delete from employees where id = ?";
 		int result = this.jdbcTemplate.update(sql,id);
 		return result;
 	}

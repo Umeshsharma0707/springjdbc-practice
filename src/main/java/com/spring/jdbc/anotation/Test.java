@@ -19,6 +19,19 @@ public class Test {
 		EmployeeDao employeeDao = context.getBean("employeeDao",EmployeeDao.class);
 		
 		
+		Employee employee = employeeDao.getEmployee(5);
+		System.out.println(employee);
+		
+		
+		
+		
+		
+		/*
+		 * int deleteEmployee = employeeDao.deleteEmployee(7);
+		 * System.out.println("total row deleted : " + deleteEmployee);
+		 */
+		
+		
 		/* Employee employee = new Employee();
 		employee.setId(13);
 		employee.setName("rahul");
