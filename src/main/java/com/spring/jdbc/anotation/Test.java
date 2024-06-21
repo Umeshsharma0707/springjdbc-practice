@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ScannedGenericBeanDefinition;
 
 import com.spring.jdbc.anotation.dao.EmployeeDao;
 import com.spring.jdbc.anotation.entities.Employee;
@@ -18,14 +17,14 @@ public class Test {
 		ApplicationContext context = 
 				new AnnotationConfigApplicationContext(com.spring.jdbc.anotation.JavaConfig.class);
 		
-		/*
-		 * EmployeeDao employeeDao = context.getBean("employeeDao",EmployeeDao.class);
-		 * 
-		 * 
-		 * List<Employee> allEmployees = employeeDao.getAllEmployees();
-		 * 
-		 * for(Employee employee : allEmployees) { System.out.println(employee); }
-		 */
+		
+		  EmployeeDao employeeDao = context.getBean("employeeDao",EmployeeDao.class);
+		  
+		  
+		  List<Employee> allEmployees = employeeDao.getAllEmployees();
+		  
+		  for(Employee employee : allEmployees) { System.out.println(employee); }
+		 
 		
 		
 		/*
