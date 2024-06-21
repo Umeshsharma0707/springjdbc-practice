@@ -18,19 +18,21 @@ public class Test {
 				new AnnotationConfigApplicationContext(com.spring.jdbc.anotation.JavaConfig.class);
 		
 		
+	
 		  EmployeeDao employeeDao = context.getBean("employeeDao",EmployeeDao.class);
-		  
-		  
-		  List<Employee> allEmployees = employeeDao.getAllEmployees();
-		  
-		  for(Employee employee : allEmployees) { System.out.println(employee); }
+		 /* 
+		 * 
+		 * List<Employee> allEmployees = employeeDao.getAllEmployees();
+		 * 
+		 * for(Employee employee : allEmployees) { System.out.println(employee); }
+		 */
 		 
 		
 		
-		/*
+		
 		Employee employee = employeeDao.getEmployee(5);
 		System.out.println(employee);
-		*/
+		
 		
 		
 		
